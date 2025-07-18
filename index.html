@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold text-blue-700">📝 Task Manager</h1>
+  </header>
+
+  <!-- Add Task -->
+  <div class="w-full max-w-md bg-white p-4 rounded shadow mb-4">
+    <div class="flex gap-2">
+      <input type="text" id="taskInput" placeholder="Enter a new task" class="flex-1 px-3 py-2 border rounded focus:outline-none" />
+      <button id="addTaskBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add</button>
+    </div>
+  </div>
+
+  <!-- Task List -->
+  <ul id="taskList" class="w-full max-w-md space-y-2">
+    <button id="correct"></button>
+    <button id="wrong"></button>
+  </ul>
+
+  <script src="main.js"></script>
+</body>
+</html>
